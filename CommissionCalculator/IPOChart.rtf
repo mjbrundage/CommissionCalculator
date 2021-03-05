@@ -8,4 +8,30 @@ Output - Commission
 
 ALGORITHM
 
-1) User Input QuarterSales
+1) User Input int quarterSales
+2) Calculate Commission
+    If (quarterSales < = 0)
+    commissionAmt = 0
+    display "Error: The Quarterly Sales must be greater than 0."
+
+C++ INSTRUCTIONS
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main ()
+{
+    //Declare Variables
+    double quarterSales = 0.0;
+    double commissionAmt = 0.0;
+
+    //Receive Input
+    cout << "Quarterly Sales: ";
+    cin >> quarterSales;
+
+    //Calculate Commission
+    if (quarterSales < = 0)
+    commissionAmt = 0;
+    cout << "Error: The Quarterly Sales must be greater than 0.";
+}
