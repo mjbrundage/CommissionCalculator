@@ -11,4 +11,18 @@ int main()
     //Receive Input
     cout << "Quarterly Sales: ";
     cin >> quarterSales;
+
+    //Calculate Commission
+    if (quarterSales <= 0)
+    commissionAmt = 0;
+    cout << "Error: The Quarterly Sales must be Greater than 0.";
+    else
+        if (quarterSales > 0 and quarterSales <= 20000)
+        commissionAmt = quarterSales * .05;
+
+    //Display Results
+    cout << fixed << setprecision(2);
+    cout << "Commission Owed: " << commissionAmt << endl;
+
+    //End of main funtion
 }
