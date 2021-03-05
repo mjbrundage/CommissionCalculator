@@ -19,6 +19,7 @@ int main()
     else
         if (quarterSales > 0 and quarterSales <= 20000)
         commissionAmt = quarterSales * .05;
+    //end if 
 
     //Display Results
     cout << fixed << setprecision(2);
