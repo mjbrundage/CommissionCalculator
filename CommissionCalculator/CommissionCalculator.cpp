@@ -19,6 +19,14 @@ int main()
     else
         if (quarterSales > 0 and quarterSales <= 20000)
         commissionAmt = quarterSales * .05;
+        else
+        if (quarterSales >=20001 and quarterSales <= 50000)
+        commissionAmt = quarterSales * .07 + 1000;
+        else
+        if (quarterSales <=50001)
+        commissionAmt = quarterSales * .1 + 3100;
+        end if
+        end if
     //end if 
 
     //Display Results
