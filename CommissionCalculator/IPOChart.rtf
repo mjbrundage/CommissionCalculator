@@ -23,6 +23,10 @@ ALGORITHM
     if (quarterSales <= 50001)
     commisionAmt = quarterSales * .10 + 3100;
 3) Display Results
+    cout << fixed << setprecision(2);
+    cout << "Commission Owed: " << commissionAmt << endl;
+//End
+
 
 C++ INSTRUCTIONS
 
@@ -44,4 +48,22 @@ int main ()
     if (quarterSales < = 0)
     commissionAmt = 0;
     cout << "Error: The Quarterly Sales must be greater than 0.";
+    else
+    if (quarterSales > 0 and quarterSales <= 20000)
+        commissionAmt = quarterSales * .05;
+        else
+        if (quarterSales >=20001 and quarterSales <= 50000)
+        commissionAmt = quarterSales * .07 + 1000;
+        else
+        if (quarterSales <=50001)
+        commissionAmt = quarterSales * .1 + 3100;
+        end if
+        end if
+    //end if 
+
+    //Display Results
+    cout << fixed << setprecision(2);
+    cout << "Commission Owed: " << commissionAmt << endl;
+
+    //End of main funtion
 }
